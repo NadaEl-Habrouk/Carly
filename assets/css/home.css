@@ -1,0 +1,532 @@
+/* Start variables */
+:root {
+    --text-color: #000000;
+    --button-color: #256BF3;
+    --footer-color: #232323;
+    --backgrouned-color: white;
+    --logo-font: 'Dancing Script', cursive;
+    --main-font: 'Inter', sans-serif;
+}
+
+/* End variables */
+
+/* Global Rules */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* Global Rules */
+/*================ Start Navbar======================= */
+.container .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: relative;
+}
+.container .nav i {
+    display: none;
+}
+.container .nav .logo {
+    font-family: var(--logo-font);
+    font-size: 23px;
+    font-weight: 700;
+}
+.container .nav .links{
+    display: flex;
+}
+
+.container .nav .links ul {
+    display: flex;
+    margin-left: 50px;
+    position: relative;
+}
+.container .nav .links div:nth-child(2) a,
+.container .nav .links div:last-child a {
+    background-color: #256BF3;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #FFFDFD;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container .nav .links a {
+    color: var(--text-color);
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 700;
+}
+@media (max-width:1200px) {
+    .container .nav .links a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:992px) {
+    .container .nav .links ul {
+        display: none;
+    }
+}
+
+/* =============== End Navbar =========================*/
+/* ==============Start landing========================== */
+.landing {
+    background-color: #F1F6FF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.landing .landing-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.landing .landing-left h1 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 60px;
+    padding-left: 40px;
+}
+
+.landing .landing-left h1 span {
+    color: blue;
+}
+
+.landing .landing-left p {
+    margin-left: 40px;
+    color: #615F5F;
+}
+
+.landing .landing-right img {
+    max-width: 100%;
+    width: 600px;
+}
+@media(max-width: 992px) {
+    .landing {
+        flex-direction: column;
+    }
+    .landing .landing-left {
+        text-align: center;
+    }
+    .landing .landing-right img {
+        width: 100%;
+    }
+}
+@media(max-width: 767px) {
+    .landing .landing-left h1 {
+        font-size: 40px;
+        padding-left: 0;
+    }
+    .landing .landing-left p {
+        margin-left: 0;
+    }
+}
+
+/* ==============End landing========================== */
+/* ==================search section================= */
+.search {
+    background-color: #f1f6ff;
+    width: 510px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.search .text {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.search .search-input input[type="search"] {
+    border: none;
+    width: 327px;
+    height: 40px;
+    background: #E7E7E7;
+}
+
+.search .search-input input[type="submit"] {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 7px 10px;
+    margin-left: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+@media(max-width: 767px) {
+    .search {
+        width: fit-content;
+    }
+    .search .search-input input[type="submit"] {
+        margin: 10px 127px;
+    }
+}
+
+/* ==================search section================= */
+/* =====================about us======================= */
+.about {
+    padding: 50px;
+    display: flex;
+    background-color: #f1f6ff;
+    justify-content: space-evenly;
+}
+
+.about .left img {
+    height: 450px;
+}
+
+.about .right .f1 {
+    color: #808080;
+    margin-bottom: 20px;
+}
+
+.about .right .f2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.about .right .f3 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+@media(max-width: 992px) {
+    .about{
+        flex-direction: column;
+    }
+    .about .left img {
+        width: 100%;
+    }
+    .about .right {
+        padding-top: 50px;
+        text-align: center;
+    }
+}
+
+/* =====================about us======================= */
+/* ==============rent deals================= */
+.container .rent-deals {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .rent-deals .label {
+    text-align: center;
+}
+
+.container .rent-deals .label p {
+    font-size: 18px;
+    font-weight: 200;
+    color: rgb(0 0 0 / 50%);
+    margin: 20px 0;
+}
+
+.container .rent-deals .label h2 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.container .rent-deals .show-all {
+    margin: 40px auto;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+
+.container .rent-deals .show-all a {
+    color: black;
+    margin-right: 10px;
+}
+/* < !--======================= Start Car Section =========================--> */
+.car {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.car .container .cars {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.car .container .cars .box {
+    background: #FFFFFF;
+    border: 1px solid #808080;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.car .container .cars .box:hover {
+    border-color: #0000FF;
+    transform: translateY(-10px);
+    /* transition: 0.6s; */
+    /* transition-duration: 0.3s; */
+}
+
+.car .container .cars .box .image {
+    /* width: 100%; */
+    display: block;
+    height: 230px;
+}
+
+.car .container .cars .box .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.car .container .cars .box .info {
+    /* padding: 10px 20px; */
+    padding: 10px 0px 10px 12px;
+    border-bottom: 1px solid #000000;
+    transform: rotate(0.21deg);
+}
+
+.car .container .cars .box:hover .info {
+    border-color: #0000FF;
+}
+
+.car .container .cars .box .info p:first-of-type {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 124%;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.car .container .cars .box .info p:first-of-type span {
+    color: #626262;
+}
+
+.car .container .cars .box .info p:first-of-type svg {
+    width: 14px;
+    height: 14px;
+    color: #FFBD3B;
+
+}
+
+.car .container .cars .box .info p:last-of-type {
+    font-family: 'Inter';
+    /* font-style: normal; */
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 124%;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.car .container .cars .box .info .car-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.car .container .cars .box .info .car-details p {
+    flex-basis: 45%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 124%;
+    /* align-items: center; */
+    color: #454141;
+}
+
+.car .container .cars .box .info .car-details p img {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+.car .container .cars .box .car-buy {
+    padding: 10px 12px 10px 12px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.car .container .cars .box .car-buy a {
+    text-decoration: none;
+}
+
+.car .container .cars .box .car-buy p:first-child {
+    flex-basis: 45%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 124%;
+    color: #000000;
+}
+
+.car .container .cars .box .car-buy p:first-child span {
+    color: #383838;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 124%;
+}
+
+.car .container .cars .box .car-buy p:last-child {
+    flex-basis: 45%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 124%;
+    color: #0000FF;
+}
+
+.car .container .cars .box .car-buy p:last-child svg {
+    font-size: 26px;
+    position: relative;
+    top: 4px;
+    /* text-align: center; */
+}
+
+@media (min-width:768px) {
+    .car .container {
+        width: 750px;
+    }
+
+}
+
+@media (min-width:992px) {
+    .car .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .car .container {
+        width: 1170px;
+    }
+}
+
+@media (min-width:1370px) {
+    .car .container {
+        width: 1300px;
+        margin-left: -85px;
+    }
+}
+
+/* < !--======================= End Car Section =========================--> */
+
+
+/* ==============rent deals================= */
+/* =================footer====================== */
+.footer {
+    background-color: #232323;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.footer .list {
+    color: white;
+    padding: 60px 14px 30px;
+}
+
+.footer .list:first-child {
+    padding-left: 100px;
+}
+
+.footer .list h3 {
+    margin-bottom: 50px;
+}
+
+.footer .list ul a {
+    color: white;
+    padding-bottom: 30px;
+    display: block;
+}
+
+.footer .list:last-child {
+    text-align: center;
+}
+
+.footer .list:last-child ul {
+    display: flex;
+}
+
+.footer .list:last-child ul a {
+    padding-right: 40px;
+    font-size: 35px;
+}
+
+.footer .list:last-child .foot-logo a {
+    color: white;
+    font-family: var(--logo-font);
+    font-size: 30px;
+    margin-top: 50px;
+    display: block;
+}
+@media(max-width: 767px) {
+    .footer{
+        text-align: center;
+    } 
+    .footer .list:first-child {
+        padding-left: 0;
+    }
+    .footer .list:last-child ul a {
+        padding-right: 45px;
+        padding-left: 10px;
+    }
+}
+
+/* =================footer====================== */
+
+/* ===================cars========== */
+
+/* ===================cars========== */

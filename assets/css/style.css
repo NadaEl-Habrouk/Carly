@@ -1,0 +1,85 @@
+/* Start variables */
+:root {
+    --text-color: #000000; 
+    --button-color:  #256BF3;
+    --footer-color: #232323;
+    --backgrouned-color:#F5F5F5;
+    --logo-font: 'Dancing Script', cursive;
+    --main-font: 'Inter', sans-serif;
+
+}
+
+
+/* End variables */
+
+/* Start Component */
+
+
+
+/* End Component */
+
+/*  Start Globa Rules */
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+background-color: var(--backgrouned-color);
+font-family: 'Inter', sans-serif;
+}
+
+ul {
+    list-style: none;
+
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+/* @media (max-width:450px),
+(min-width:300px) {
+    .container {
+        width: 740px;
+    }
+
+
+} */
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*  End Globa Rules */

@@ -1,0 +1,236 @@
+/* Start variables */
+:root {
+    --text-color: #000000;
+    --button-color: #256BF3;
+    --footer-color: #232323;
+    --backgrouned-color: #F5F5F5;
+    --logo-font: 'Dancing Script', cursive;
+    --main-font: 'Inter', sans-serif;
+
+}
+
+
+/* End variables */
+
+/* Start Component */
+
+
+
+/* End Component */
+
+/*  Start Globa Rules */
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--backgrouned-color);
+    font-family: 'Inter', sans-serif;
+}
+
+ul {
+    list-style: none;
+
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+/* @media (max-width:450px),
+(min-width:300px) {
+    .container {
+        width: 740px;
+    }
+
+
+} */
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*  End Globa Rules */
+
+
+/* < !--=================== Start Login Section=======================--> */
+.login {
+    position: relative;
+    background-color: #F5F5F5;
+    height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* justify-content: center; */
+}
+
+.login .text {
+    flex-basis: 55%;
+    position: relative;
+    background-color: #0038FF;
+    height: 100%;
+    clip-path: polygon(0 0, 65% 0, 100% 100%, 0% 100%);
+
+}
+
+.login .text span {
+    position: absolute;
+    color: #F8F8F8;
+    width: 115px;
+    height: 39px;
+    left: 126px;
+    top: 62px;
+
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 109.52%;
+}
+
+.login .text .log {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /* text-align: center; */
+    margin-left: 50px;
+    font-family: 'Faustina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 78px;
+    line-height: 109.52%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    letter-spacing: 3px ;
+}
+.login .log-form
+{
+    display: flex;
+    flex-basis: 40%;
+
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.login .log-form h2{
+    position: relative;
+    text-transform: uppercase;
+font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+ 
+    letter-spacing: 0.17em;
+    width: fit-content;
+    left: 12%;
+    color: #000000;
+    margin-bottom: 50px;
+}
+.login .log-form form .box label{
+    font-family: 'Roboto';
+    display: block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        margin: 5px;
+}
+.login .log-form form .box input {
+    padding: 10px 15px;
+width: 353px;
+    background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 8px;
+        margin-bottom: 20px;
+}
+.login .log-form form .box input[type="submit"]{
+    border: none;
+    margin-top: 10px;
+    background-color: #0000FF;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+}
+.login .log-form .text-account{
+    display: flex;
+
+}
+.login .log-form .text-account span{
+    /* flex-basis: 50%; */
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #0000FF;
+        width: fit-content;
+
+}
+.login  .log-form .text-account span:first-of-type{
+margin-right: 50px
+;}
+.login .log-form .text-account span a{
+    text-decoration: none;
+}
+@media (max-width:1250px) {
+.login {
+    flex-direction: column;
+
+}
+.login .text {
+    flex-basis: 100%;
+    clip-path: none;
+}
+.login .log-form{
+    flex-basis: 100%;
+    align-items: center;
+}
+.login .log-form h2 {
+    left: 0;
+}
+.login .text .log{
+    text-align: center;
+    margin-left: 0;
+}
+}
+@media (max-width:991px) {
+
+}
+/* < !--=================== End Login Section=======================--> */
