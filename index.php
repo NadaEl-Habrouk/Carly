@@ -45,6 +45,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--   Main CSS File    -->
     <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="website icon" type="png" href="assets/images/logo-1.png">  
 
 
 
