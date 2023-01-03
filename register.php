@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/home.css">
+	  <link rel="website icon" type="png" href="assets/images/logo-1.png">  
 
 <?php include('config/header2.php');?>
 
