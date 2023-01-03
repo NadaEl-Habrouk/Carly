@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans&family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+               <link rel="website icon" type="png" href="assets/images/logo-1.png">  
   </head>
   <body>
       <div class="box">
