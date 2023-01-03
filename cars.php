@@ -60,6 +60,7 @@ $all_car = $conn->query($sql);
     <!--   Main CSS File    -->
     <link rel="stylesheet" href="assets/css/cars.css" >
     <link rel="stylesheet" href="assets/css/car.css" >
+     <link rel="website icon" type="png" href="assets/images/logo-1.png">   
 
 
 
